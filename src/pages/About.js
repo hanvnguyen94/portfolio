@@ -1,7 +1,7 @@
 import React from "react";
 import Modal from "react-modal";
 import { motion } from "framer-motion";
-import { pageAnimation, fade } from "../animation";
+import { pageAnimation } from "../animation";
 import Intro from "../components/about/Intro";
 import Interest from "../components/about/Interest";
 import Info from "../components/about/Info";
