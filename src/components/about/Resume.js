@@ -28,18 +28,24 @@ const Resume = () => {
       resume: [
         {
           id: 1,
+          year: "2023 - Current",
+          institute: "U.S. Army Corps of Engineers",
+          degree: "Computer Scientist",
+        },
+        {
+          id: 2,
           year: "2021 - 2023",
           institute: "Advata Inc",
           degree: "Associate Engineer",
         },
         {
-          id: 2,
+          id: 3,
           year: "2021 - 2022",
           institute: "Freelance",
           degree: "Freelance Web Developer",
         },
         {
-          id: 3,
+          id: 4,
           year: "2020 - 2021",
           institute: "General Assembly",
           degree: "Software Engineering Fellow",
