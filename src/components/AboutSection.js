@@ -1,31 +1,86 @@
 import React from "react";
-import profile from "../images/profile.png";
+import bioPhoto from "../images/bio/bio-photo.jpg";
+import { motion } from "framer-motion";
+import { titleAnimation, fade, photoAnimation } from "../animation";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faGithub,
+  faLinkedinIn,
+  faInstagram,
+} from "@fortawesome/free-brands-svg-icons";
 
 const AboutSection = () => {
   return (
-    <div>
+    <div className="about">
       <div className="description">
-        <div className="title">
+        <motion.div>
           <div className="hide">
-            <h2>My name is</h2>
+            <motion.h2 variants={titleAnimation}>My name is</motion.h2>
           </div>
           <div className="hide">
-            <h2>
+            <motion.h2 variants={titleAnimation}>
               <span>Han Nguyen.</span>
-            </h2>
+            </motion.h2>
           </div>
-          <div className="hide">
-            <h2>A software developer.</h2>
-          </div>
-        </div>
-        <p>
-          Contact me for any collaboration ideas that you have. Or simply just
-          want to have a discussion about coding.
-        </p>
-        <button>Contact Me</button>
+        </motion.div>
+        <motion.p variants={fade}>
+          Experienced software developer with a flair for creating elegant
+          solutions based in New Hampshire. Currenly working as a Computer
+          Scientist for the U.S. Army Corps of Engineers - Cold Regions Research
+          and Development Laboratory.
+        </motion.p>
+        <motion.a
+          variants={fade}
+          target="blank"
+          href="https://github.com/hanvnguyen94"
+        >
+          <FontAwesomeIcon
+            className="icon"
+            style={{
+              fontSize: "2rem",
+              marginRight: "1.5rem",
+              color: "white",
+            }}
+            icon={faGithub}
+          />
+        </motion.a>
+        <motion.a
+          variants={fade}
+          target="blank"
+          href="https://www.linkedin.com/in/hnguyen94/"
+        >
+          <FontAwesomeIcon
+            className="icon"
+            style={{
+              fontSize: "2rem",
+              marginRight: "1.5rem",
+              color: "white",
+            }}
+            icon={faLinkedinIn}
+          />
+        </motion.a>
+        <motion.a
+          variants={fade}
+          target="blank"
+          href="https://www.instagram.com/han.dragonlady/"
+        >
+          <FontAwesomeIcon
+            className="icon"
+            style={{
+              fontSize: "2rem",
+              marginRight: "1.5rem",
+              color: "white",
+            }}
+            icon={faInstagram}
+          />
+        </motion.a>
       </div>
       <div className="image">
-        <img src={profile} alt="" />
+        <motion.img
+          variants={photoAnimation}
+          src={bioPhoto}
+          alt="profile-picture"
+        />
       </div>
     </div>
   );
