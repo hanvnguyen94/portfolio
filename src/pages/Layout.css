@@ -161,14 +161,6 @@
   letter-spacing: 0px;
   margin-bottom: 15px;
 }
-.tm_title .title_flex {
-  width: 100%;
-  height: auto;
-  clear: both;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-}
 
 .tm_title .title_flex {
   flex-direction: column;
@@ -601,7 +593,7 @@
   clear: both;
   float: left;
   span {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
 }
 .skill_list ul {
