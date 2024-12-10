@@ -4,7 +4,7 @@ Welcome to my personal portfolio website! This project showcases my work, skills
 
 ## 🌐 **Live Demo**
 
-[View the Live Demo](#) _(Replace with your live demo link)_
+[View the Live Demo](https://hanvnguyen94.github.io/portfolio)
 
 ---
 
